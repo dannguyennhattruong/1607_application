@@ -1,0 +1,123 @@
+@import "../../../styles.scss";
+.it_1607_drawer_wrapper {
+    width: 240px;
+    min-height: 100vh;
+    max-height: 100vh;
+    background-color: $_1607_primary_color;
+    color: $_1607_secondary_color;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.2s all ease-in-out;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px -1px 5px 0px rgba(100, 97, 97, 0.25);
+    &.close {
+        padding: 0px;
+        width: 0px;
+    }
+    .it_1607_logo {
+        display: flex;
+        align-items: center;
+        h1 {
+            margin: 0;
+            &[_1] {
+                color: rgb(192, 132, 53);
+            }
+
+            &[_2] {
+                color: rgb(164, 185, 42);
+            }
+
+            &[_3] {
+                color: rgb(42, 185, 42);
+            }
+            &[_4] {
+                color: rgb(42, 185, 178);
+            }
+        }
+    }
+
+    .account_area {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        .avatar {
+            height: 96px;
+            width: 96px;
+            border-radius: 50%;
+            margin-bottom: 30px;
+        }
+        .name {
+            font-weight: 600;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .email {
+            font-size: 13px;
+            color: #94a3b8;
+            font-weight: 600;
+        }
+    }
+
+    .setting {
+        position: absolute;
+        top: 29px;
+        cursor: pointer;
+        right: 20px;
+        @include _1607_flex_center;
+    }
+
+    .navigation_area {
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+        .title {
+            color: #74d0f5;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .des {
+            color: #94a3b8;
+            font-size: 11px;
+            margin-top: 5px;
+            font-weight: 600;
+        }
+        .tab_area {
+            display: flex;
+            flex-direction: column;
+            .tab {
+                height: 40px;
+                width: 100%;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                padding-left: 15px;
+                padding-right: 15px;
+                cursor: pointer;
+                .icon {
+                    height: 24px;
+                    width: 24px;
+                }
+                .text {
+                    font-size: 13px;
+                    font-weight: 600;
+                    margin-left: 25px;
+                }
+                &.select {
+                    background-color: #2c3344;
+                }
+                &:hover {
+                    background-color: #2c3344;
+                }
+            }
+        }
+    }
+}

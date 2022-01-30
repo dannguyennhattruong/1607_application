@@ -1,0 +1,38 @@
+<div class="it_1607_drawer_wrapper" [class.close]="!isShow">
+    <div class="setting">
+        <span class="material-icons md-24">settings</span>
+    </div>
+    <div class="it_1607_logo">
+        <h1 _1>1</h1>
+        <h1 _2>6</h1>
+        <h1 _3>0</h1>
+        <h1 _4>7</h1>
+    </div>
+    <div class="account_area">
+        <img class="avatar"
+            src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t1.6435-9/106016161_720374642046783_3111333105636540800_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=I2vW9bpIuLQAX9H5Lcz&_nc_ht=scontent.fsgn5-9.fna&oh=00_AT_wYA52PX9-tVhmjGzIpobZKM9v8ZNGKDLd2CJtMthMxg&oe=621C0298"
+            alt="">
+        <div class="name">
+            Nhật Trường
+        </div>
+        <div class="email">
+            nhattruong2513@gmail.com
+        </div>
+    </div>
+
+    <div class="navigation_area">
+        <div class="title">
+            Dashboard
+        </div>
+        <div class="des">
+            Unique designs
+        </div>
+        <div class="tab_area">
+            <div class="tab" *ngFor="let route of routes" (click)="naviagte(route)"
+                [class.select]="tabSelect === route.data?.id">
+                <span class="material-icons icon md-24">{{route.data?.iconName}}</span>
+                <span class="text">{{route.data?.pageName}}</span>
+            </div>
+        </div>
+    </div>
+</div>

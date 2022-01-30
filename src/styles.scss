@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&display=swap');
+$_1607_primary_color: #0f172a;
+$_1607_secondary_color: #fff;
+
+@mixin _1607_flex_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+}
+
+.material-icons {
+    &:hover {
+        transform: scale(1.1);
+    }
+}
