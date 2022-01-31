@@ -6,7 +6,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
     styleUrls: ['./_1607_header.component.scss']
 })
 export class _1607_HeaderComponent {
-    isShow = true;
+    isShow = false;
     @Output() show = new EventEmitter();
     toggleMenu = () => {
         this.isShow = !this.isShow;
